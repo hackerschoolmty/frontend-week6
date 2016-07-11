@@ -6,6 +6,7 @@ const ABSOLUTE_BASE = path.join(__dirname, '..');
 module.exports = {
   entry: [
     'webpack-hot-middleware/client',
+    './src/main'
   ],
   output: {
     path: path.join(ABSOLUTE_BASE, 'public/dist'),
