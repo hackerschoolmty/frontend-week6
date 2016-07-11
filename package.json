@@ -1,0 +1,42 @@
+{
+  "name": "reactchat",
+  "version": "0.0.0",
+  "description": "Chat based on React for HackerSchool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hackerschoolmty/frontend-week6.git"
+  },
+  "scripts": {
+    "start": "node webpack/devServer.js",
+    "lint": "eslint src"
+  },
+  "author": "Javier Ponce",
+  "license": "ISC",
+  "dependencies": {
+    "materialize-css": "^0.97.6",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
+    "express": "^4.14.0",
+    "file-loader": "^0.9.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.1"
+  }
+}
