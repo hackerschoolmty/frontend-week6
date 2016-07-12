@@ -1,29 +1,30 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 
 class Auth extends React.Component {
 
   render() {
     return (
       <section className="row">
-        <h5>Login</h5>
+        <h5>Welcome <strong>{this.props.userName}</strong></h5>
         <form className="col s12">
           <div className="row">
             <div className="input-field col s6">
-              <i className="material-icons prefix">perm_identity</i>
-              <input id="user" type="text" />
-              <label htmlFor="user">User</label>
+              <i className="material-icons prefix">email</i>
+              <input id="email" type="text" />
+              <label htmlFor="email">your@email.com</label>
             </div>
           </div>
           <div className="row">
             <div className="input-field col s6">
               <i className="material-icons prefix">lock</i>
               <input id="password" type="tel" />
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">password</label>
             </div>
           </div>
           <div className="row">
             <button className="btn waves-effect waves-light" type="button">
-              Submit
+              Sign In
               <i className="material-icons right">send</i>
             </button>
           </div>
@@ -33,4 +34,10 @@ class Auth extends React.Component {
   }
 }
 
-export default Auth;
+
+
+export default connect((state) => {
+  return {
+    userName: state.user.name
+  }
+})(Auth);

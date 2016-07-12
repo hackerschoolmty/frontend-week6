@@ -13,9 +13,13 @@
   "author": "Javier Ponce",
   "license": "ISC",
   "dependencies": {
+    "immutable": "^3.8.1",
     "materialize-css": "^0.97.6",
     "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "redux-immutable": "^3.0.6"
   },
   "devDependencies": {
     "babel-core": "^6.10.4",

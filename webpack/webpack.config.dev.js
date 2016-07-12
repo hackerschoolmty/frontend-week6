@@ -4,6 +4,7 @@ var webpack = require('webpack')
 const ABSOLUTE_BASE = path.join(__dirname, '..');
 
 module.exports = {
+  devtool: 'source-map',
   entry: [
     'webpack-hot-middleware/client',
     './src/main'
@@ -22,6 +23,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel',
+        exclude: /node_modules/
       },
       {
         test:   /\.scss$/,
