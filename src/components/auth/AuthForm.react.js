@@ -1,20 +1,20 @@
 import React from 'react';
 
 class AuthForm extends React.Component {
-  render () {
+  render() {
     return (
       <form className="col s12">
         <div className="row">
           <div className="input-field col s6">
             <i className="material-icons prefix">email</i>
-            <input id="email" type="text" />
+            <input id="email" type="email" />
             <label htmlFor="email">your@email.com</label>
           </div>
         </div>
         <div className="row">
           <div className="input-field col s6">
             <i className="material-icons prefix">lock</i>
-            <input id="password" type="tel" />
+            <input id="password" type="password" />
             <label htmlFor="password">password</label>
           </div>
         </div>

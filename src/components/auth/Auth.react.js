@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import AuthForm from './AuthForm.react';
 import { connect } from 'react-redux';
 
@@ -12,12 +12,15 @@ class Auth extends React.Component {
       </section>
     );
   }
+
 }
 
-
+Auth.propTypes = {
+  userName: PropTypes.string,
+};
 
 export default connect((state) => {
   return {
-    userName: state.user.name
+    userName: state.user.name,
   }
 })(Auth);
