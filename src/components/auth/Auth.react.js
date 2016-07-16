@@ -7,7 +7,7 @@ class Auth extends React.Component {
   render() {
     return (
       <section className="row">
-        <h5>Welcome <strong>{this.props.userName}</strong></h5>
+        <h5>Welcome <strong>{this.props.displayName}</strong></h5>
         <AuthForm />
       </section>
     );
@@ -17,10 +17,7 @@ class Auth extends React.Component {
 
 Auth.propTypes = {
   userName: PropTypes.string,
+  changeName: PropTypes.func
 };
 
-export default connect((state) => {
-  return {
-    userName: state.user.name,
-  }
-})(Auth);
+export default Auth;
